@@ -13,10 +13,10 @@ public class App
     public static void main( String[] args )
     {
 
-        System.out.printf("\n***  Battleship Game ***\n");
+        System.out.print("\n***  Battleship Game ***\n");
 
-        // Tasks.taskA();
-        Tasks.taskB();
+        //Tasks.taskA();
+        //Tasks.taskB();
         //	Tasks.taskC();
         //	Tasks.taskD();
     }
