@@ -132,4 +132,19 @@ class FleetTest {
         fleet.addShip(new Barge(Compass.NORTH, new Position(0,0)));
         assertDoesNotThrow(() -> fleet.printShipsByCategory("Submarino"));
     }
+
+    @Test
+    @DisplayName("Não deve adicionar navios com coordenadas negativas")
+    void testAddShipNegative() {
+        assertFalse(fleet.addShip(new Barge(Compass.NORTH, new Position(-1, 0))));
+        assertFalse(fleet.addShip(new Barge(Compass.NORTH, new Position(0, -1))));
+    }
+
+    @Test
+    @DisplayName("Não deve adicionar navio abaixo do limite inferior (Bottom > 9)")
+    void testAddShipBottomOutOfBounds() {
+        Position pos = new Position(10, 5);
+        IShip ship = new Barge(Compass.NORTH, pos);
+        assertFalse(fleet.addShip(ship));
+    }
 }

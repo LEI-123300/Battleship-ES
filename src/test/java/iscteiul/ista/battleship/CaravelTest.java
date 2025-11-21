@@ -53,4 +53,23 @@ public class CaravelTest {
         assertFalse(c.getPositions().get(0).isHit());
         assertFalse(c.getPositions().get(1).isHit());
     }
+
+    @Test
+    @DisplayName("Deve lançar exceção se a direção for NULL")
+    void testNullBearing() {
+        assertThrows(AssertionError.class, () -> {
+            new Caravel(null, new Position(0, 0));
+        });
+    }
+
+    @Test
+    void testInvalidBearing() {
+        // Usamos uma direção "estranha" (a 5.ª do Enum) para ativar o default
+        if (Compass.values().length > 4) {
+            Compass invalid = Compass.values()[4]; // O tal UNKNOWN
+            assertThrows(IllegalArgumentException.class, () -> {
+                new Caravel(invalid, new Position(0, 0));
+            });
+        }
+    }
 }
