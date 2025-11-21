@@ -28,6 +28,9 @@ public class Game implements IGame {
         countInvalidShots = 0;
         countRepeatedShots = 0;
         this.fleet = fleet;
+
+        this.countHits = 0;
+        this.countSinks = 0;
     }
 
     /*
@@ -52,6 +55,7 @@ public class Game implements IGame {
                         countSinks++;
                         return s;
                     }
+                    return s;
                 }
             }
         }
