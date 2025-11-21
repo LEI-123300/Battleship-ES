@@ -1,5 +1,9 @@
-package iscteiul.ista.battleship;
+package iscteiul.ista;
 
+import iscteiul.ista.battleship.Compass;
+import iscteiul.ista.battleship.IPosition;
+import iscteiul.ista.battleship.Position;
+import iscteiul.ista.battleship.Ship;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
