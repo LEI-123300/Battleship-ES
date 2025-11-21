@@ -15,30 +15,34 @@
 ## Unit tests
 
 ### S3 Ships test case
-* [unknown] C3 BargeTest
+* [passed] C3 BargeTest @123300
     tags: #ship, #unit-tests
     ID: TMS-001
 
-* [unknown] C4 CaravelTest
+* [passed] C4 CaravelTest @123300
     tags: #ship, #unit-tests
     ID: TMS-002
 
-* [unknown] C5 CarrackTest
+* [passed] C5 CarrackTest @123300
     tags: #ship, #unit-tests
     ID: TMS-003
 
-* [unknown] C6 FrigateTest
+* [passed] C6 FrigateTest @123300
     tags: #ship, #unit-tests
     ID: TMS-004
 
-* [unknown] C7 GalleonTest
+* [passed] C7 GalleonTest @123300
     tags: #ship, #unit-tests
     ID: TMS-005
+
+* [passed] C8 FleetTest @123300
+    tags: #fleet, #unit-tests
+    ID: TMS-006
 
 
 ### S4 Tasks test case
 * [unknown] C8 TasksTest
     tags: #tasks, #unit-tests
-    ID: TMS-006
+    ID: TMS-007
 
 
